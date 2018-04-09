@@ -68,7 +68,7 @@
 
 > ##### CharField 
 >> ``` none
->> Example: CharField(max_length=11, min_length=2)
+>> Example: CharField(max_length = 11, min_length = 2)
 >> ```
 >> | Case | Example |
 >> | --- | --- |
@@ -140,7 +140,7 @@
 
 > ##### TimeField
 >> ``` none
->> Example: TimeField(input_formats='%H:%M:%S')
+>> Example: TimeField(input_formats = '%H:%M:%S')
 >> ```
 >> | Case | Example |
 >> | --- | --- |
@@ -154,17 +154,17 @@
 >> ```
 >> | Case | Example |
 >> | --- | --- |
->> | Happy Path | http://<span></span>google.com |
+>> | Happy Path | http://<i></i>google.com |
 >> | Blank | |
 >> | Email | email<span></span>@gmail.com |
 
 > ##### GenericIPAddressField
 >> ``` none
->> Example: GenericIPAddressField(protocol='ipv4')
+>> Example: GenericIPAddressField(protocol = 'ipv4')
 >> ```
 >> | Case | Example |
 >> | --- | --- |
->> | Happy Path | http://<span></span>google.com |
+>> | Happy Path | http://<i></i>google.com |
 >> | Blank | |
 >> | Protocol IPv4 | 192.168.240.1 |
 >> | Protocol IPv6 | 2001:4860:4860::8888 |

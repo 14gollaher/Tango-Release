@@ -55,7 +55,7 @@
 >           ...
 >           "views-to-test": { 
 >              "my-favorite-view": [ "my-favorite-form" ]
->              "my-other-view": [ "my-favorite-form, my-other-form" ]
+>              "my-other-view": [ "my-favorite-form", "my-other-form" ]
 >           }
 >       }
 >       ```
@@ -64,9 +64,9 @@
 > 1. Select view to be tested from the page, and you're ready to begin using Tango!
 
 
-What Fields are Tested?
+#### What Fields are Tested?
 
-> #### CharField 
+> ##### CharField 
 >> ``` none
 >> Example: CharField(max_length=11, min_length=2)
 >> ```
@@ -80,7 +80,7 @@ What Fields are Tested?
 >> | Minimum Length | He |
 >> | Minimum Length - 1 | H |
 
-> #### EmailField 
+> ##### EmailField 
 >> ``` none
 >> Example: EmailField()
 >> ```
@@ -92,7 +92,7 @@ What Fields are Tested?
 >> | Company | mcdonald<span></span>@green-jones.com |
 >> | Ending Only | gmail.com |
 
-> #### IntegerField
+> ##### IntegerField
 >> ``` none
 >> Example: IntegerField(min_value = 10, max_value = 100)
 >> ```
@@ -106,7 +106,7 @@ What Fields are Tested?
 >> | Maximum Value | 100 |
 >> | Maximum Value | 101 |
 
-> #### DecimalField
+> ##### DecimalField
 >> ``` none
 >> Example: DecimalField(max_value = 4224.2, min_value = 45, max_digits = 23, decimal_places = 2)
 >> ```
@@ -122,7 +122,7 @@ What Fields are Tested?
 >> | Decmial Places Length | 200.99 |
 >> | Decimal Places Length + 1 | 200.997 |
 
-> #### FloatField
+> ##### FloatField
 >> ``` none
 >> Example: FloatField(max_value = 4224.2, min_value = 45, max_digits = 23, decimal_places = 2)
 >> ```
@@ -138,7 +138,7 @@ What Fields are Tested?
 >> | Decmial Places Length | 200.99 |
 >> | Decimal Places Length + 1 | 200.997 |
 
-> #### TimeField
+> ##### TimeField
 >> ``` none
 >> Example: TimeField(input_formats='%H:%M:%S')
 >> ```
@@ -148,7 +148,7 @@ What Fields are Tested?
 >> | Blank | |
 >> | InvalidFormat | 30:30:30 |
 
-> #### URLField
+> ##### URLField
 >> ``` none
 >> Example: URLField()
 >> ```
@@ -158,7 +158,7 @@ What Fields are Tested?
 >> | Blank | |
 >> | Email | email<span></span>@gmail.com |
 
-> #### GenericIPAddressField
+> ##### GenericIPAddressField
 >> ``` none
 >> Example: GenericIPAddressField(protocol='ipv4')
 >> ```

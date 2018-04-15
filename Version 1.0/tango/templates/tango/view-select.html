@@ -1,0 +1,30 @@
+{% extends "tango-layout.html" %}
+ 
+{% block content %}
+<html> 
+<head>
+    {% load staticfiles %}
+</head>
+ 
+<body>
+    <div class="uk-container">
+        <div id="view-table" class="uk-grid uk-child-width-1-2@s uk-flex-center uk-text-center uk-margin-top" uk-grid>
+            <!--Html generated in tango-view-select.js-->
+        </div>
+    </div>
+</body>
+</html>
+{% endblock %}
+{% block scripts %}
+
+<script>
+
+</script>
+{% load staticfiles %}
+<script src="{% static 'scripts/tango/view-select.js' %}"></script>
+<script>
+    var views = JSON.parse('{{ views | escapejs | safe}}');
+    var baseUrl = 'http://{{ request.get_host }}';
+    var selectedCaseIndex = 0;
+</script>
+{% endblock %}

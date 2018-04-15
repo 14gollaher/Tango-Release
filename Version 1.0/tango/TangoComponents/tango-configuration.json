@@ -1,0 +1,8 @@
+{
+  "apps_to_test": [ "app" ],
+  "views-to-test": {
+    "sample-view": [ "ClassForm"],
+    "sad-view": [ "SadPathForm" ],
+    "super-view":  [ "SuperForm" ]
+  }
+}

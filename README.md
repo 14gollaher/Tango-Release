@@ -79,6 +79,7 @@
 >> | Maximum Length + 1 | Hello Worlds |
 >> | Minimum Length | He |
 >> | Minimum Length - 1 | H |
+>> | Encoded Characters | ñá |
 
 > ##### EmailField 
 >> ``` none
@@ -108,7 +109,7 @@
 
 > ##### DecimalField
 >> ``` none
->> Example: DecimalField(max_value = 4224.2, min_value = 45, max_digits = 23, decimal_places = 2)
+>> Example: DecimalField(max_value = 4224.2, min_value = 45, max_digits = 7, decimal_places = 2)
 >> ```
 >> | Case | Example |
 >> | --- | --- |
@@ -121,10 +122,12 @@
 >> | Maximum Value + 12.42 | 4236.62 |
 >> | Decmial Places Length | 200.99 |
 >> | Decimal Places Length + 1 | 200.997 |
+>> | Decmial Maximum Digits | 2001.999 |
+>> | Decimal Maximum Digits + 1 | 2001.5488 |
 
 > ##### FloatField
 >> ``` none
->> Example: FloatField(max_value = 4224.2, min_value = 45, max_digits = 23, decimal_places = 2)
+>> Example: FloatField(max_value = 4224.2, min_value = 45, decimal_places = 2)
 >> ```
 >> | Case | Example |
 >> | --- | --- |

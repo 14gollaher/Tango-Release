@@ -1,0 +1,3 @@
+.all-cases-table tr:nth-child(2) {
+    font-weight: bold;
+}
